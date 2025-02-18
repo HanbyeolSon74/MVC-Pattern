@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback List</title>
+  </head>
+  <body>
+    <h1>Feedback List</h1>
+    <ul>
+      <% feedbacks.forEach(feedback => { %>
+      <li>
+        <a href="/feedbacks/<%= feedback.feedbackId %>"
+          >User ID: <%= feedback.userId %> - Review: <%= feedback.reviewText
+          %></a
+        >
+      </li>
+      <% }) %>
+    </ul>
+    <a href="/">Main Page</a>
+  </body>
+</html>

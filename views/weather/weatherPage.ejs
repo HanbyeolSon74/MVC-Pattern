@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather List</title>
+  </head>
+  <body>
+    <h1>Weather List</h1>
+    <ul>
+      <% weathers.forEach(weather => { %>
+      <li>
+        <a href="/weather/<%= weather.date %>">
+          <%= weather.date %> - <%= weather.temperature %>°C - <%=
+          weather.weatherCondition %>
+        </a>
+      </li>
+      <% }) %>
+    </ul>
+    <a href="/">Main Page</a>
+  </body>
+</html>

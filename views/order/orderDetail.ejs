@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Detail</title>
+  </head>
+  <body>
+    <h1>Order Detail</h1>
+    <p><strong>Order ID:</strong> <%= order.orderId %></p>
+    <p><strong>User ID:</strong> <%= order.userId %></p>
+    <p><strong>Order Date:</strong> <%= order.orderDate %></p>
+    <p><strong>Total Amount:</strong> <%= order.totalAmount %> USD</p>
+    <p><strong>Shipping Address:</strong> <%= order.shippingAddress %></p>
+    <p><strong>Shipping Status:</strong> <%= order.shippingStatus %></p>
+    <p><strong>Payment Method:</strong> <%= order.paymentMethod %></p>
+
+    <a href="/orders">Order</a>
+  </body>
+</html>
